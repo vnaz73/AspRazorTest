@@ -1,0 +1,35 @@
+﻿@page
+@model Taste.Pages.Admin.Category.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="border backgroundWhite container">
+    <div class="row">
+        <div class="col-6">
+            <h2 class="text-primary">Category List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a asp-page="Upsert" class="btn btn-primary"><i class="fas fa-plus"></i> &nbsp; Create New</a>
+        </div>
+    </div>
+        <br />
+        <br />
+        <table id="DT-load" class="table table-bordered table-striped" style="width:100%">
+            
+            <thead>
+                <tr>
+                    <th>Category Name</th>
+                    <th>Category Order</th>
+                    <th></th>
+                </tr>
+            </thead>
+        </table>
+
+   
+</div>
+
+@section Scripts{
+<script src="~/js/category.js"></script>
+ }
+
